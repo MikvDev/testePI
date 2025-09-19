@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Font-Titulos: 'Poppins', sans-serif;
+    --cor-azul: #93CCF7;
+    --cor-azul2: #42ADE2;
+    --cor-cinza:#90A4AE;
+    --cor-cinza2: #76848C;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--Font-Titulos);
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 420px; /* largura típica de celular */
+}
+
+
+
+
+.menu-ham{
+    margin: 26px 330px 26px 0px;
+    
+    width: 31px;
+    height: 31px;
+}
+
+/* Container história */
+.container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    border: 2px solid var(--cor-azul);
+    width: 90%;
+    height: 20vh;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.historia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+    color: var(--cor-azul);
+}
+
+.img-castle {
+    height: 80%;
+    aspect-ratio: 1/1;
+}
+
+/* Título */
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    font-size: 20px;
+    color: var(--cor-azul);
+}
+
+/* Grid de jogos */
+.jogosGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 16px;
+    width: 90%;
+    margin-bottom: 52px;
+    font-family: var(--Font-Titulos);
+    color: var(--cor-azul2);
+
+}
+
+.jogoItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.jogoIcon {
+    background: var(--cor-azul);
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jogoIcon2{
+    background-color: azure;
+    width: 85%;
+    height: 85%;
+    border-radius: 15px;
+}
+
+/* Menu inferior */
+.nav-inicio{
+    border-top: 3800px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 0;
+    font-family: var(--Font-Titulos );
+    font-size: 14px;
+        
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+    font-family: var(--Font-Titulos);
+}
+
+ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--Font-Titulos);
+    font-size: 12px;
+    color: #333;
+}
+
+ul li img {
+    margin-bottom: 2px;
+    width: 24px;
+    height: 24px;
+    
+}
+ul li p {
+    color: var(--cor-cinza)
+}
